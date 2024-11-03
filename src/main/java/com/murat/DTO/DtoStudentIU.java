@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class DtoStudentIU {
 
     @NotEmpty(message = "Firstname alani bos birakilamaz")
-    @Size(min=3, max=40)
+    @Size(min=3, max=40, message = "boyut mutlaka en az 3 en fzla 40 olmali")
     private String firstName;
     @NotEmpty(message = "Lastname alani bos birakilamaz")
     @Size(min=3, max=40)
